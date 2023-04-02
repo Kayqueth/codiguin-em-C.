@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    float a, b, medida; // Declaração das variáveis que serão utilizadas no cálculo da média aritmética
+
+    printf("Média Aritmética de Dois Inteiros");
+
+    printf("Calculadora de média aritmética\n"); // Exibe o título do programa
+
+    printf("Digite o primeiro número: "); // Solicita a entrada do primeiro número
+    scanf("%f", &a); // Lê o valor digitado pelo usuário e o armazena na variável 'a'
+
+    printf("Digite o segundo número: "); // Solicita a entrada do segundo número
+    scanf("%f", &b); // Lê o valor digitado pelo usuário e o armazena na variável 'b'
+
+    medida = (a+b)/2; // Calcula a média aritmética dos dois números e armazena o resultado na variável 'medida'
+    
+    printf("A média aritmética é %.2f\n", medida); // Exibe o resultado da média aritmética com duas casas decimais
+
+    return 0; // Indica que o programa foi executado com sucesso
+}
