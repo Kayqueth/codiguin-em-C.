@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    float peso, altura, idade, ano, dia, juventude;
+
+        printf("FORMULA DO NÚMERO DA JUVENTUDE VERSÃO 2");
+
+
+    // Solicita ao usuário as informações necessárias para calcular o índice de juventude
+    printf("Por favor, digite o seu peso em kg: ");
+    scanf("%f", &peso);
+
+    printf("Por favor, digite a sua altura em metros: ");
+    scanf("%f", &altura);
+
+    printf("Por favor, digite a sua idade em anos: ");
+    scanf("%f", &idade);
+
+    printf("Por favor, digite o ano atual: ");
+    scanf("%f", &ano);
+
+    printf("Por favor, digite o número de dias desde o seu último aniversário: ");
+    scanf("%f", &dia);
+
+    // Calcula o índice de juventude usando a fórmula fornecida
+    juventude = ((((peso + altura) / idade + ano) * dia) - 33) * (idade + 7);
+
+    // Imprime o índice de juventude para o usuário
+    printf("O seu índice de juventude é: %f\n", juventude);
+
+    return 0;
+}
